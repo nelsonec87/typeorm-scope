@@ -1,1 +1,1 @@
-export declare const patchSelectQueryBuilder: () => void;
+export declare const patchQueryBuilder: () => void;
