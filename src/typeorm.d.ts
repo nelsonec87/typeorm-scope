@@ -1,7 +1,7 @@
-import "typeorm"
+import "typeorm";
 
 declare module "typeorm" {
-	export interface SelectQueryBuilder<Entity> {
+	export interface QueryBuilder<Entity> {
 		___scope_getQuery_copy___: () => string
 	}
 }
