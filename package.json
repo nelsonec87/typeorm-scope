@@ -1,10 +1,9 @@
 {
 	"name": "typeorm-scope",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"license": "MIT",
 	"description": "TypeORM extension which adds scope to entities.",
 	"scripts": {
-		"postinstall": "yarn build",
 		"dev": "nodemon -w 'src/**/*' --ignore 'src/**/*.spec.ts' -e ts -x 'yarn build'",
 		"build": "yarn build:types && yarn build:js",
 		"build:types": "tsc --build tsconfig-ci.json",

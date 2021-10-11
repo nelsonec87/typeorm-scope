@@ -60,7 +60,7 @@ class DeleteQB<Entity extends ObjectLiteral> extends DeleteQueryBuilder<Entity> 
 	}
 }
 
-export const patchSelectQueryBuilder = () => {
+export const patchQueryBuilder = () => {
 	SelectQueryBuilder.prototype[GET_QUERY_COPY] = SelectQueryBuilder.prototype.getQuery
 	for (const property of Object.getOwnPropertyNames(SelectQB.prototype)) {
 		Object.defineProperty(SelectQueryBuilder.prototype, property, Object.getOwnPropertyDescriptor(SelectQB.prototype, property) as PropertyDescriptor)
